@@ -17,7 +17,7 @@ const deploy = async () => {
 
     try{
     const result = await new web3.eth.Contract(abi)
-        .deploy({ data: bytecode, arguments: ['hi there!'] })
+        .deploy({ data: bytecode })
         .send({
             gas: fixedGasLimit,
             maxPriorityFeePerGas: maxPriorityFeePerGas.toString(),
