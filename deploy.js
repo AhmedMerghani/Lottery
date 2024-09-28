@@ -24,6 +24,7 @@ const deploy = async () => {
             maxFeePerGas: maxFeePerGas.toString(),
             from: accounts[0]
         });
+        console.log(abi);
         console.log('Contract deployed to', result.options.address);
     }
     catch (error) {
